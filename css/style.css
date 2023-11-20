@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+/* Q1 サイズ変更ここから */
+
+.first-box,
+.second-box,
+.third-box,
+.forth-box,
+.fifth-box,
+.sixth-box {
+  display: flex;
+  justify-content: center;
+}
+
+@media not screen and (min-width: 960px) {
+  .red-box {
+    width: 200px;
+    height: 200px;
+    background-color: #ff0000;
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .red-box {
+    width: 400px;
+    height: 400px;
+    background-color: #ff0000;
+    max-width: 960px;
+  }
+}
+
+/* Q1 サイズ変更ここまで */
+
+
+/* Q2 色変更ここから */
+@media not screen and (min-width: 960px) {
+  .colorchange-box {
+    background-color: #007bff;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .colorchange-box {
+    background-color: #ff0000;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Q2 色変更ここまで */
+
+/* Q3 値変更ここから */
+@media not screen and (min-width: 960px) {
+  .blue-box {
+    background-color: #0008ff;
+    margin: 50px;
+  }
+
+  .green-box {
+    background-color: #22ff00;
+    margin: 50px;
+  }
+
+  .green-box:nth-child(2) {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .blue-box {
+    background-color: #0008ff;
+    margin: 150px;
+  }
+
+  .green-box {
+    background-color: #22ff00;
+    margin: 150px;
+  }
+
+  .green-box:nth-child(2) {
+    margin-left: 0;
+  }
+}
+
+.flex-item {
+  width: 300px;
+  height: 300px;
+}
+
+.container {
+  display: flex;
+}
+
+/* Q3 値変更ここまで */
+
+/* Q4 floatの解除ここから */
+@media not screen and (min-width: 960px) {
+  .red--box {
+    background-color: #ff0000;
+    width: 300px;
+    height: 300px;
+    clear: both;
+    float: none;
+  }
+
+  .blue--box {
+    background-color: #0008ff;
+    width: 300px;
+    height: 300px;
+    clear: both;
+    float: none;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .red--box {
+    background-color: #ff0000;
+    width: 300px;
+    height: 300px;
+    float: left;
+  }
+
+  .blue--box {
+    background-color: #0008ff;
+    width: 300px;
+    height: 300px;
+    float: left;
+  }
+}
+
+/* Q4 floatの解除ここまで */
+
+/* Q5 flexboxの入れ替え(逆順)ここから */
+@media not screen and (min-width: 960px) {
+  .red---box {
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: #ff0000;
+  }
+
+  .blue---box {
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: #0008ff;
+  }
+
+  .orange---box {
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: #ff8400;
+  }
+
+  .clearfix {
+    display: flex;
+  }
+
+  .red---box {
+    order: 3;
+  }
+
+  .blue---box {
+    order: 2;
+  }
+
+  .orange---box {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .red---box {
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: #ff0000;
+  }
+
+  .blue---box {
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: #0008ff;
+  }
+
+  .orange---box {
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: #ff8400;
+  }
+
+  .clearfix {
+    display: flex;
+  }
+}
+
+.text {
+  text-align: center;
+  padding: 140px;
+}
+
+/* Q5 flexboxの入れ替え(逆順)ここまで */
+
+
+/* Q6 flexboxの入れ替え(指定)ここから */
+@media not screen and (min-width: 960px) {
+  .green {
+    width: 300px;
+    height: 300px;
+    background-color: #00ff51;
+  }
+
+  .yellow {
+    width: 300px;
+    height: 300px;
+    background-color: #d4ff00;
+  }
+
+  .pink {
+    width: 300px;
+    height: 300px;
+    background-color: #ff00e1;
+  }
+
+  .green {
+    order: 2;
+  }
+
+  .yellow {
+    order: 3;
+  }
+
+  .pink {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .green {
+    width: 300px;
+    height: 300px;
+    background-color: #00ff51;
+  }
+
+  .yellow {
+    width: 300px;
+    height: 300px;
+    background-color: #d4ff00;
+  }
+
+  .pink {
+    width: 300px;
+    height: 300px;
+    background-color: #ff00e1;
+  }
+}
+
+.text {
+  text-align: center;
+  padding: 140px;
+}
+
+/* Q6 flexboxの入れ替え(指定)ここまで */
+
+/* Q7 要素の表示・非表示ここから */
+@media not screen and (min-width: 960px) {
+  .seventh-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .red {
+    width: 300px;
+    height: 300px;
+    background-color: #ff0000;
+    visibility: hidden
+  }
+
+  .grn {
+    width: 300px;
+    height: 300px;
+    background-color: #00ff51;
+    visibility: visible
+  }
+
+  .blue {
+    width: 300px;
+    height: 300px;
+    background-color: #0008ff;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .seventh-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .red {
+    width: 300px;
+    height: 300px;
+    background-color: #ff0000
+  }
+
+  .grn {
+    width: 300px;
+    height: 300px;
+    background-color: #00ff51;
+    visibility: visible
+  }
+
+  .blue {
+    width: 300px;
+    height: 300px;
+    background-color: #0008ff;
+    visibility: hidden
+  }
+}
+
+/* Q7 要素の表示・非表示ここまで */
