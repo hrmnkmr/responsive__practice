@@ -1,18 +1,16 @@
 @charset "UTF-8";
 
 /* Q1 サイズ変更ここから */
-
 .first-box,
 .second-box,
 .third-box,
-.forth-box,
 .fifth-box,
 .sixth-box {
   display: flex;
   justify-content: center;
 }
 
-@media not screen and (min-width: 960px) {
+@media screen and (max-width: 959px) {
   .red-box {
     width: 200px;
     height: 200px;
@@ -34,7 +32,7 @@
 
 
 /* Q2 色変更ここから */
-@media not screen and (min-width: 960px) {
+@media screen and (max-width: 959px) {
   .colorchange-box {
     background-color: #007bff;
     width: 300px;
@@ -53,80 +51,43 @@
 /* Q2 色変更ここまで */
 
 /* Q3 値変更ここから */
-@media not screen and (min-width: 960px) {
+@media screen and (max-width: 959px) {
   .blue-box {
     background-color: #0008ff;
-    margin: 50px;
+    margin-right: 50px;
   }
 
-  .blue-box:nth-child(1) {
-    margin-top: 0;
-  }
-
-  .blue-box:nth-child(1) {
-    margin-bottom: 0;
-  }
-
-  .green-box:nth-child(2) {
-    margin-left: 0;
-  }
-
-  .green-box:nth-child(2) {
-    margin-top: 0;
-  }
-
-  .green-box:nth-child(2) {
-    margin-bottom: 0;
+  .green-box {
+    background-color: #22ff00;
   }
 }
 
 @media screen and (min-width: 960px) {
   .blue-box {
     background-color: #0008ff;
-    margin: 150px;
-  }
-
-  .blue-box:nth-child(1) {
-    margin-top: 0;
-  }
-
-  .blue-box:nth-child(1) {
-    margin-bottom: 0;
+    margin-right: 150px;
   }
 
   .green-box {
     background-color: #22ff00;
-    margin: 150px;
-  }
-
-  .green-box:nth-child(2) {
-    margin-left: 0;
-  }
-
-  .green-box:nth-child(2) {
-    margin-top: 0;
-  }
-
-  .green-box:nth-child(2) {
-    margin-bottom: 0;
   }
 }
 
 .flex-item {
   width: 300px;
   height: 300px;
+  flex-shrink: 0;
 }
-
 
 /* Q3 値変更ここまで */
 
 /* Q4 floatの解除ここから */
-@media not screen and (min-width: 960px) {
+@media screen and (max-width: 959px) {
+
   .red--box {
     background-color: #ff0000;
     width: 300px;
     height: 300px;
-    clear: both;
     float: none;
   }
 
@@ -134,12 +95,12 @@
     background-color: #0008ff;
     width: 300px;
     height: 300px;
-    clear: both;
     float: none;
   }
 }
 
 @media screen and (min-width: 960px) {
+
   .red--box {
     background-color: #ff0000;
     width: 300px;
@@ -152,13 +113,17 @@
     width: 300px;
     height: 300px;
     float: left;
+  }
+
+  .clearfix {
+    justify-content: center;
   }
 }
 
 /* Q4 floatの解除ここまで */
 
 /* Q5 flexboxの入れ替え(逆順)ここから */
-@media not screen and (min-width: 960px) {
+@media screen and (max-width: 959px) {
   .red---box {
     width: 300px;
     height: 300px;
@@ -233,7 +198,7 @@
 
 
 /* Q6 flexboxの入れ替え(指定)ここから */
-@media not screen and (min-width: 960px) {
+@media screen and (max-width: 959px) {
   .green {
     width: 300px;
     height: 300px;
@@ -293,17 +258,17 @@
 /* Q6 flexboxの入れ替え(指定)ここまで */
 
 /* Q7 要素の表示・非表示ここから */
-@media not screen and (min-width: 960px) {
+@media screen and (max-width: 959px) {
   .seventh-box {
     display: flex;
-    justify-content: center;
   }
 
   .red {
     width: 300px;
     height: 300px;
     background-color: #ff0000;
-    visibility: hidden
+    visibility: hidden;
+    display: inline-block;
   }
 
   .grn {
@@ -323,7 +288,6 @@
 @media screen and (min-width: 960px) {
   .seventh-box {
     display: flex;
-    justify-content: center;
   }
 
   .red {
@@ -343,7 +307,8 @@
     width: 300px;
     height: 300px;
     background-color: #0008ff;
-    visibility: hidden
+    visibility: hidden;
+    display: inline-block;
   }
 }
 
