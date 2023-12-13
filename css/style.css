@@ -292,6 +292,18 @@
     display: flex;
     justify-content: center;
   }
+
+  .red {
+    order: 1;
+  }
+
+  .grn {
+    order: 3;
+  }
+
+  .blue {
+    order: 2;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -318,6 +330,18 @@
   .set__box{
     display: flex;
     justify-content: center;
+  }
+
+  .red {
+    order: 1;
+  }
+
+  .grn {
+    order: 2;
+  }
+
+  .blue {
+    order: 3;
   }
 }
 
