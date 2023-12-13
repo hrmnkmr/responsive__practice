@@ -14,8 +14,6 @@
   .red-box {
     width: 200px;
     height: 200px;
-    background-color: #ff0000;
-    max-width: 960px;
   }
 }
 
@@ -23,9 +21,12 @@
   .red-box {
     width: 400px;
     height: 400px;
-    background-color: #ff0000;
-    max-width: 960px;
   }
+}
+
+.red-box {
+  background-color: #ff0000;
+  max-width: 960px;
 }
 
 /* Q1 サイズ変更ここまで */
@@ -35,17 +36,18 @@
 @media screen and (max-width: 959px) {
   .colorchange-box {
     background-color: #007bff;
-    width: 300px;
-    height: 300px;
   }
 }
 
 @media screen and (min-width: 960px) {
   .colorchange-box {
     background-color: #ff0000;
-    width: 300px;
-    height: 300px;
   }
+}
+
+.colorchange-box {
+  width: 300px;
+  height: 300px;
 }
 
 /* Q2 色変更ここまで */
@@ -53,24 +55,22 @@
 /* Q3 値変更ここから */
 @media screen and (max-width: 959px) {
   .blue-box {
-    background-color: #0008ff;
     margin-right: 50px;
-  }
-
-  .green-box {
-    background-color: #22ff00;
   }
 }
 
 @media screen and (min-width: 960px) {
   .blue-box {
-    background-color: #0008ff;
     margin-right: 150px;
   }
+}
 
-  .green-box {
-    background-color: #22ff00;
-  }
+.blue-box {
+  background-color: #0008ff;
+}
+
+.green-box {
+  background-color: #22ff00;
 }
 
 .flex-item {
@@ -84,37 +84,33 @@
 /* Q4 floatの解除ここから */
 @media screen and (max-width: 959px) {
 
-  .red--box {
-    background-color: #ff0000;
-    width: 300px;
-    height: 300px;
-    float: none;
-  }
-
+  .red--box
   .blue--box {
-    background-color: #0008ff;
-    width: 300px;
-    height: 300px;
     float: none;
   }
 }
 
+.red--box {
+  background-color: #ff0000;
+}
+
+.blue--box {
+  background-color: #0008ff;
+}
+
+.red--box,
+.blue--box {
+  width: 300px;
+  height: 300px;
+}
+
 @media screen and (min-width: 960px) {
 
-  .red--box {
-    background-color: #ff0000;
-    width: 300px;
-    height: 300px;
-    float: left;
-  }
-
+  .red--box,
   .blue--box {
-    background-color: #0008ff;
-    width: 300px;
-    height: 300px;
     float: left;
   }
-
+  
   .set_box {
     justify-content: center;
     display: flex;
@@ -126,23 +122,14 @@
 /* Q5 flexboxの入れ替え(逆順)ここから */
 @media screen and (max-width: 959px) {
   .red---box {
-    width: 300px;
-    height: 300px;
-    float: left;
     background-color: #ff0000;
   }
 
   .blue---box {
-    width: 300px;
-    height: 300px;
-    float: left;
     background-color: #0008ff;
   }
 
   .orange---box {
-    width: 300px;
-    height: 300px;
-    float: left;
     background-color: #ff8400;
   }
 
@@ -163,25 +150,25 @@
   }
 }
 
+.red---box,
+.blue---box,
+.orange---box {
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+
 @media screen and (min-width: 960px) {
   .red---box {
-    width: 300px;
-    height: 300px;
-    float: left;
     background-color: #ff0000;
   }
 
   .blue---box {
-    width: 300px;
-    height: 300px;
-    float: left;
     background-color: #0008ff;
   }
 
   .orange---box {
-    width: 300px;
-    height: 300px;
-    float: left;
     background-color: #ff8400;
   }
 
@@ -201,24 +188,6 @@
 /* Q6 flexboxの入れ替え(指定)ここから */
 @media screen and (max-width: 959px) {
   .green {
-    width: 300px;
-    height: 300px;
-    background-color: #00ff51;
-  }
-
-  .yellow {
-    width: 300px;
-    height: 300px;
-    background-color: #d4ff00;
-  }
-
-  .pink {
-    width: 300px;
-    height: 300px;
-    background-color: #ff00e1;
-  }
-
-  .green {
     order: 2;
   }
 
@@ -229,10 +198,29 @@
   .pink {
     order: 1;
   }
+}
 
-  .triple__box {
-    display: flex;
-  }
+.triple__box {
+  display: flex;
+}
+
+.green,
+.yellow,
+.pink {
+  width: 300px;
+  height: 300px;
+}
+
+.green {
+  background-color: #00ff51;
+}
+
+.yellow {
+  background-color: #d4ff00;
+}
+
+.pink {
+  background-color: #ff00e1;
 }
 
 @media screen and (min-width: 960px) {
@@ -252,10 +240,6 @@
     width: 300px;
     height: 300px;
     background-color: #ff00e1;
-  }
-
-  .triple__box {
-    display: flex;
   }
 }
 
@@ -270,27 +254,16 @@
 @media screen and (max-width: 959px) {
 
   .blue {
-    width: 300px;
-    height: 300px;
     background-color: #0008ff;
   }
 
   .grn {
-    width: 300px;
-    height: 300px;
     background-color: #00ff51;
   }
 
   .red {
-    width: 300px;
-    height: 300px;
     background-color: #ff0000;
     display: none;
-  }
-
-  .set__box{
-    display: flex;
-    justify-content: center;
   }
 
   .red {
@@ -306,30 +279,34 @@
   }
 }
 
+.blue,
+.grn,
+.red {
+  width: 300px;
+  height: 300px;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.grn {
+  background-color: #00ff51;
+}
+
+.blue {
+  background-color: #0008ff;
+}
+
+.set__box {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 960px) {
 
-  .red {
-    width: 300px;
-    height: 300px;
-    background-color: #ff0000;
-  }
-
-  .grn {
-    width: 300px;
-    height: 300px;
-    background-color: #00ff51;
-  }
-
   .blue {
-    width: 300px;
-    height: 300px;
-    background-color: #0008ff;
     display: none;
-  }
-
-  .set__box{
-    display: flex;
-    justify-content: center;
   }
 
   .red {
