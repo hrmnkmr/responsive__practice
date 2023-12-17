@@ -84,8 +84,7 @@
 /* Q4 floatの解除ここから */
 @media screen and (max-width: 959px) {
 
-  .red--box
-  .blue--box {
+  .red--box .blue--box {
     float: none;
   }
 }
@@ -110,7 +109,7 @@
   .blue--box {
     float: left;
   }
-  
+
   .set_box {
     justify-content: center;
     display: flex;
@@ -121,33 +120,28 @@
 
 /* Q5 flexboxの入れ替え(逆順)ここから */
 @media screen and (max-width: 959px) {
-  .red---box {
-    background-color: #ff0000;
-  }
 
-  .blue---box {
-    background-color: #0008ff;
-  }
-
+  .red---box,
+  .blue---box,
   .orange---box {
-    background-color: #ff8400;
+    flex-direction: row-reverse;
   }
+}
 
-  .triple_box {
-    display: flex;
-  }
+.red---box {
+  background-color: #ff0000;
+}
 
-  .red---box {
-    order: 3;
-  }
+.blue---box {
+  background-color: #0008ff;
+}
 
-  .blue---box {
-    order: 2;
-  }
+.orange---box {
+  background-color: #ff8400;
+}
 
-  .orange---box {
-    order: 1;
-  }
+.triple_box {
+  display: flex;
 }
 
 .red---box,
@@ -159,22 +153,18 @@
 }
 
 
-@media screen and (min-width: 960px) {
-  .red---box {
-    background-color: #ff0000;
-  }
+@media screen and (min-width: 960px) {}
 
-  .blue---box {
-    background-color: #0008ff;
-  }
+.red---box {
+  background-color: #ff0000;
+}
 
-  .orange---box {
-    background-color: #ff8400;
-  }
+.blue---box {
+  background-color: #0008ff;
+}
 
-  .triple_box {
-    display: flex;
-  }
+.orange---box {
+  background-color: #ff8400;
 }
 
 .text {
@@ -213,34 +203,26 @@
 
 .green {
   background-color: #00ff51;
+  order: 2;
 }
 
 .yellow {
   background-color: #d4ff00;
+  order: 3;
 }
 
 .pink {
   background-color: #ff00e1;
+  order: 1;
 }
 
-@media screen and (min-width: 960px) {
-  .green {
-    width: 300px;
-    height: 300px;
-    background-color: #00ff51;
-  }
+@media screen and (min-width: 960px) {}
 
-  .yellow {
-    width: 300px;
-    height: 300px;
-    background-color: #d4ff00;
-  }
-
-  .pink {
-    width: 300px;
-    height: 300px;
-    background-color: #ff00e1;
-  }
+.green,
+.yellow,
+.pink {
+  width: 300px;
+  height: 300px;
 }
 
 .text {
@@ -253,32 +235,11 @@
 /* Q7 要素の表示・非表示ここから */
 @media screen and (max-width: 959px) {
 
-  .blue {
-    background-color: #0008ff;
-  }
-
-  .grn {
-    background-color: #00ff51;
-  }
-
   .red {
-    background-color: #ff0000;
     display: none;
   }
 
-  .red {
-    order: 1;
-  }
-
-  .grn {
-    order: 3;
-  }
-
-  .blue {
-    order: 2;
-  }
 }
-
 .blue,
 .grn,
 .red {
@@ -309,17 +270,6 @@
     display: none;
   }
 
-  .red {
-    order: 1;
-  }
-
-  .grn {
-    order: 2;
-  }
-
-  .blue {
-    order: 3;
-  }
 }
 
 /* Q7 要素の表示・非表示ここまで */
