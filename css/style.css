@@ -10,6 +10,13 @@
   justify-content: center;
 }
 
+.red-box {
+  width: 400px;
+  height: 400px;
+  background-color: #ff0000;
+  max-width: 960px;
+}
+
 @media screen and (max-width: 959px) {
   .red-box {
     width: 200px;
@@ -17,56 +24,36 @@
   }
 }
 
-@media screen and (min-width: 960px) {
-  .red-box {
-    width: 400px;
-    height: 400px;
-  }
-}
-
-.red-box {
-  background-color: #ff0000;
-  max-width: 960px;
-}
-
 /* Q1 サイズ変更ここまで */
 
 
 /* Q2 色変更ここから */
+
+.colorchange-box {
+  background-color: #ff0000;
+  width: 300px;
+  height: 300px;
+}
+
 @media screen and (max-width: 959px) {
   .colorchange-box {
     background-color: #007bff;
   }
 }
 
-@media screen and (min-width: 960px) {
-  .colorchange-box {
-    background-color: #ff0000;
-  }
-}
-
-.colorchange-box {
-  width: 300px;
-  height: 300px;
-}
-
 /* Q2 色変更ここまで */
 
 /* Q3 値変更ここから */
+
+.blue-box {
+  margin-right: 150px;
+  background-color: #0008ff;
+}
+
 @media screen and (max-width: 959px) {
   .blue-box {
     margin-right: 50px;
   }
-}
-
-@media screen and (min-width: 960px) {
-  .blue-box {
-    margin-right: 150px;
-  }
-}
-
-.blue-box {
-  background-color: #0008ff;
 }
 
 .green-box {
@@ -82,11 +69,18 @@
 /* Q3 値変更ここまで */
 
 /* Q4 floatの解除ここから */
+.forth-box{
+    display: flex;
+    justify-content: center;
+  }
+
+
 @media screen and (max-width: 959px) {
 
-  .red--box .blue--box {
+  .forth-box{
     float: none;
   }
+
 }
 
 .red--box {
@@ -103,27 +97,12 @@
   height: 300px;
 }
 
-@media screen and (min-width: 960px) {
-
-  .red--box,
-  .blue--box {
-    float: left;
-  }
-
-  .set_box {
-    justify-content: center;
-    display: flex;
-  }
-}
-
 /* Q4 floatの解除ここまで */
 
 /* Q5 flexboxの入れ替え(逆順)ここから */
 @media screen and (max-width: 959px) {
 
-  .red---box,
-  .blue---box,
-  .orange---box {
+  .fifth-box {
     flex-direction: row-reverse;
   }
 }
@@ -140,7 +119,7 @@
   background-color: #ff8400;
 }
 
-.triple_box {
+.fifth-box {
   display: flex;
 }
 
@@ -152,21 +131,6 @@
   float: left;
 }
 
-
-@media screen and (min-width: 960px) {}
-
-.red---box {
-  background-color: #ff0000;
-}
-
-.blue---box {
-  background-color: #0008ff;
-}
-
-.orange---box {
-  background-color: #ff8400;
-}
-
 .text {
   text-align: center;
   padding: 140px;
@@ -176,7 +140,14 @@
 
 
 /* Q6 flexboxの入れ替え(指定)ここから */
+
+.text {
+  text-align: center;
+  padding: 140px;
+}
+
 @media screen and (max-width: 959px) {
+
   .green {
     order: 2;
   }
@@ -190,10 +161,6 @@
   }
 }
 
-.triple__box {
-  display: flex;
-}
-
 .green,
 .yellow,
 .pink {
@@ -203,36 +170,27 @@
 
 .green {
   background-color: #00ff51;
-  order: 2;
+  order: 1;
 }
 
 .yellow {
   background-color: #d4ff00;
-  order: 3;
+  order: 2;
 }
 
 .pink {
   background-color: #ff00e1;
-  order: 1;
-}
-
-@media screen and (min-width: 960px) {}
-
-.green,
-.yellow,
-.pink {
-  width: 300px;
-  height: 300px;
-}
-
-.text {
-  text-align: center;
-  padding: 140px;
+  order: 3;
 }
 
 /* Q6 flexboxの入れ替え(指定)ここまで */
 
 /* Q7 要素の表示・非表示ここから */
+
+  .blue{
+    display: none;
+  }
+
 @media screen and (max-width: 959px) {
 
   .red {
@@ -247,6 +205,10 @@
   height: 300px;
 }
 
+.blue {
+  background-color: #0008ff;
+}
+
 .red {
   background-color: #ff0000;
 }
@@ -255,21 +217,9 @@
   background-color: #00ff51;
 }
 
-.blue {
-  background-color: #0008ff;
-}
-
 .set__box {
   display: flex;
   justify-content: center;
-}
-
-@media screen and (min-width: 960px) {
-
-  .blue {
-    display: none;
-  }
-
 }
 
 /* Q7 要素の表示・非表示ここまで */
