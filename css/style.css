@@ -78,7 +78,7 @@
 @media screen and (max-width: 959px) {
 
   .forth-box{
-    float: none;
+    flex-direction: column;
   }
 
 }
@@ -170,30 +170,31 @@
 
 .green {
   background-color: #00ff51;
-  order: 1;
 }
 
 .yellow {
   background-color: #d4ff00;
-  order: 2;
 }
 
 .pink {
   background-color: #ff00e1;
-  order: 3;
 }
 
 /* Q6 flexboxの入れ替え(指定)ここまで */
 
 /* Q7 要素の表示・非表示ここから */
 
-  .blue{
-    display: none;
-  }
+.blue{
+  display: none;
+}
 
 @media screen and (max-width: 959px) {
 
-  .red {
+  .blue {
+    display: block;
+  }
+
+  .red{
     display: none;
   }
 
