@@ -100,6 +100,11 @@
 /* Q4 floatの解除ここまで */
 
 /* Q5 flexboxの入れ替え(逆順)ここから */
+
+.fifth-box {
+  flex-direction: row;
+}
+
 @media screen and (max-width: 959px) {
 
   .fifth-box {
@@ -146,6 +151,18 @@
   padding: 140px;
 }
 
+.green {
+  order: 1;
+}
+
+.yellow {
+  order: 2;
+}
+
+.pink {
+  order: 3;
+}
+
 @media screen and (max-width: 959px) {
 
   .green {
@@ -186,6 +203,10 @@
 
 .blue{
   display: none;
+}
+
+.red{
+  display: block;
 }
 
 @media screen and (max-width: 959px) {
